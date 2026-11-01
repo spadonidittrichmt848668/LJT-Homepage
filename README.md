@@ -12,6 +12,10 @@ Built with [Jekyll](https://jekyllrb.com) and the [Academic Pages](https://githu
 * `_config.yml` — site and author (sidebar) settings
 * `_data/navigation.yml` — header navigation (About, Publications)
 
+## Publishing
+
+The site is built and deployed by `.github/workflows/jekyll.yml`. GitHub Pages has to be enabled for this repository first: **Settings → Pages → Build and deployment → Source: GitHub Actions**. The workflow can also be started manually from the Actions tab, and it will then publish the site at <https://spadonidittrichmt848668.github.io/LJT-Homepage/>.
+
 ## Contact
 
 * Email: [jliugi@connect.ust.hk](mailto:jliugi@connect.ust.hk)
