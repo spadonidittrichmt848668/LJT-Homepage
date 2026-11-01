@@ -32,5 +32,7 @@ jobs:
         run: |
           echo "--- Generated HTML pages ---"
           find _site -name "*.html" -not -path "*/assets/*" | sort
-          echo "--- Home page text ---"
-          sed -e 's/<[^>]*>//g' _site/index.html | tr -s ' \n' ' \n' | sed '/^$/d'
+      - name: Publications page text
+        run: |
+          echo "--- Publications page text ---"
+          sed -e 's/<[^>]*>//g' _site/publications/index.html | tr -s ' \n' ' \n' | sed '/^$/d'
